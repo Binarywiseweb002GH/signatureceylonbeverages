@@ -6414,3 +6414,12 @@ a.tribe-events-gcal {
 .blocks_20 {
     max-width:100px;
 }
+
+
+.re_wine1 {
+    display: inline-block;  /* keeps it inline but allows centering */
+}
+
+.parent-container {
+    text-align: center;    /* center all inline/inline-block children */
+}
