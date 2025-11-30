@@ -6429,6 +6429,28 @@ a.tribe-events-gcal {
 }
 
 /* Normal header right menu */
+.footerWidget .sc_columns_4 {
+    display: flex;
+    justify-content: center; /* center horizontally */
+}
+
+.footerWidget .widgetWrap {
+    text-align: center; /* center text and images inside */
+}
+.footerWidget .social_style_images {
+    display: flex;
+    justify-content: center; /* center icons horizontally */
+    padding: 0;
+    margin: 10px 0; /* optional spacing */
+    list-style: none; /* remove bullets if any */
+}
+
+.footerWidget .social_style_images li {
+    margin: 0 5px; /* spacing between icons */
+}
+
+
+
 
 
 
