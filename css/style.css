@@ -6448,9 +6448,67 @@ a.tribe-events-gcal {
 .footerWidget .social_style_images li {
     margin: 0 5px; /* spacing between icons */
 }
+/* HEADER FLEX LAYOUT */
+.header-flex {
+    display: flex;
+    align-items: center;  /* keeps everything vertically centered */
+    padding: 25px 40px;   /* original padding — DO NOT change */
+}
 
+/* LEFT + RIGHT MENUS */
+#mainmenu,
+#mainmenu_right {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
 
+    /* Move ONLY menus upward slightly */
+    position: relative;
+    top: -45px;   /* use small negative value to move up */
+}
 
+#mainmenu li,
+#mainmenu_right li {
+    list-style: none;
+}
 
+/* FLEX BALANCING */
+#mainmenu {
+    flex: 1;
+    justify-content: flex-end;
+}
 
+#mainmenu_right {
+    flex: 1;
+    justify-content: flex-start;
+}
 
+/* CENTER LOGO (unchanged) */
+.logo-center {
+    flex-shrink: 0;
+    padding: 0 40px;
+}
+
+.logo-center img {
+    height: 70px;
+    display: block;
+}
+.window-scrolled .header-flex {
+    padding: 8px 40px;               /* very compact padding */
+    background-color: #11509d;          
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.window-scrolled .logo-center img {
+    height: 40px;                     /* smaller logo */
+}
+
+.window-scrolled #mainmenu,
+.window-scrolled #mainmenu_right {
+    top: -2px;                        /* menus slightly above logo */
+}
