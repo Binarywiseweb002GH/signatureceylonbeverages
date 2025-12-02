@@ -6512,3 +6512,16 @@ a.tribe-events-gcal {
 .window-scrolled #mainmenu_right {
     top: -2px;                        /* menus slightly above logo */
 }
+
+.tp-caption.description {
+    transform: translateY(-20px) !important; /* negative = moves up */
+}
+/* Move the button up */
+.tp-caption.button {
+    transform: translateY(-120px) !important;  /* adjust value as needed */
+}
+
+.tp-caption.button .rs_button3 a:hover {
+    background-color: #0d3a70 !important;  /* change to desired hover color */
+    color: #ffffff !important;             /* optional, keep text white */
+}
